@@ -340,6 +340,63 @@
     }
   </style>
 
+
+<style id="team-portrait-fix">
+  .profiles {
+    align-items: stretch !important;
+  }
+
+  .profiles > .profile {
+    text-align: center !important;
+    min-width: 0;
+  }
+
+  .team-portrait {
+    display: block !important;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    max-width: 100%;
+    margin: 0 auto 15px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border: 3px solid #0ea5e9;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  .profiles .team-portrait img {
+    display: block !important;
+    float: none !important;
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .profiles .portrait-brolin img {
+    object-position: center top !important;
+  }
+
+  .profiles .portrait-alvaro img {
+    object-position: center top !important;
+    transform: translate(18%, -28%) scale(2.4);
+    transform-origin: 50% 12%;
+  }
+
+  .profiles .portrait-erick img {
+    object-position: center top !important;
+    transform: translate(24%, -20%) scale(2.8);
+    transform-origin: 50% 12%;
+  }
+</style>
+
 </head>
 
 
@@ -390,7 +447,7 @@
 
       <div class="profile">
 
-        <img src="assets/imagenes/perfiles/Profile_2.jpeg" alt="Andrés Yarce Botero">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_2.jpeg" alt="Andrés Yarce Botero"></div>
 
         <h2>Andrés Yarce Botero</h2>
 
@@ -408,7 +465,7 @@
 
       <div class="profile">
 
-        <img src="assets/imagenes/perfiles/Profile_1.jpeg" alt="Álvaro de Jesus Ochoa Calle">
+        <div class="team-portrait portrait-alvaro"><img src="assets/imagenes/perfiles/Profile_1.jpeg" alt="Álvaro de Jesus Ochoa Calle"></div>
 
         <h2>Álvaro de Jesus Ochoa Calle</h2>
 
@@ -426,7 +483,7 @@
 
       <div class="profile">
 
-        <img src="assets/imagenes/perfiles/Profile_3.jpeg" alt="Juan Jesus Valdez Vasquez">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_3.jpeg" alt="Juan Jesus Valdez Vasquez"></div>
 
         <h2>Juan Jesus Valdez Vasquez</h2>
 
@@ -443,7 +500,7 @@
 
       <div class="profile">
 
-        <img src="assets/imagenes/perfiles/Profile_4.jpeg" alt="Michiel van Weele">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_4.jpeg" alt="Michiel van Weele"></div>
 
         <h2>Michiel van Weele</h2>
 
@@ -461,8 +518,8 @@
 
       <div class="profile">
 
-        <img src="assets/imagenes/perfiles/profile_5.jpeg" alt="John Erick Hoyos Giraldo"
-          style="object-fit: cover; object-position: center 22%;">
+        <div class="team-portrait portrait-erick"><img src="assets/imagenes/perfiles/profile_5.jpeg" alt="John Erick Hoyos Giraldo"
+          style="object-fit: cover; object-position: center 22%;"></div>
 
         <h2>John Erick Hoyos Giraldo</h2>
 
@@ -473,6 +530,20 @@
         </p>
 
       </div>
+
+      <div class="profile">
+        <div class="team-portrait portrait-brolin"><img src="assets/imagenes/perfiles/Brolin_profile.jpeg"
+             alt="Brolin"></div>
+        <h2>Brolin</h2>
+        <p>Head of Electronics &amp; Hardware Development</p>
+      </div>
+        </p>
+      </div> <!-- End of John's profile -->
+
+      <!-- Brolin -->
+      
+
+    </div> <!-- End of profiles -->
 
 
     </div>
@@ -569,7 +640,7 @@
   </footer>
 
 
-  <script src="assets/language.js"></script>
+  <script src="assets/language.js?v=1793548485827227366"></script>
 </body>
 
 </html>

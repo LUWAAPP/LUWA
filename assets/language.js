@@ -4,6 +4,7 @@
   const STORAGE_KEY = 'luwa-language';
 
   const es = {
+    'Head of Electronics & Hardware Development': 'Director de Electrónica y Desarrollo de Hardware',
     // Global navigation and site chrome
     'Home': 'Inicio',
     'About': 'Nosotros',
@@ -237,7 +238,7 @@
   };
 
   const nl = {
-
+    'Head of Electronics & Hardware Development': 'Hoofd Elektronica en Hardwareontwikkeling',
     // Global navigation and site chrome
     'Home': 'Home',
     'About': 'Over ons',
