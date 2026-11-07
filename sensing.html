@@ -167,6 +167,78 @@
             <a href="assets/imagenes/imagenes_generales/sensor_4.png" data-lightbox="hardware"><img src="assets/imagenes/imagenes_generales/sensor_4.png" alt="Final Assembly"></a>
             <div class="gallery-info"><h4 class="gallery-caption">Field Assembly</h4><p class="gallery-subtext">Final enclosure ready for field deployment.</p></div>
         </div>
+    
+
+        <!-- LUWA PCB DEVELOPMENT GALLERY -->
+        <div class="gallery-card" data-luwa-pcb-gallery="true">
+            <a href="assets/imagenes/imagenes_generales/LUWA_PCB.jpeg"
+               data-lightbox="hardware"
+               data-title="LUWA PCB Development">
+
+                <img
+                    src="assets/imagenes/imagenes_generales/LUWA_PCB.jpeg"
+                    alt="LUWA PCB Development"
+                    loading="lazy">
+
+            </a>
+
+            <div class="gallery-info">
+                <h4 class="gallery-caption">
+                    LUWA PCB Development
+                </h4>
+
+                <p class="gallery-subtext">
+                    Electronic hardware development and PCB prototyping.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <a href="assets/imagenes/imagenes_generales/LUWA1_PCB.jpeg"
+               data-lightbox="hardware"
+               data-title="PCB Design & Integration">
+
+                <img
+                    src="assets/imagenes/imagenes_generales/LUWA1_PCB.jpeg"
+                    alt="LUWA PCB Design and Integration"
+                    loading="lazy">
+
+            </a>
+
+            <div class="gallery-info">
+                <h4 class="gallery-caption">
+                    PCB Design & Integration
+                </h4>
+
+                <p class="gallery-subtext">
+                    Development and integration of electronic components.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <a href="assets/imagenes/imagenes_generales/LUWA2_PCB.jpeg"
+               data-lightbox="hardware"
+               data-title="Electronic Hardware Development">
+
+                <img
+                    src="assets/imagenes/imagenes_generales/LUWA2_PCB.jpeg"
+                    alt="LUWA Electronic Hardware Development"
+                    loading="lazy">
+
+            </a>
+
+            <div class="gallery-info">
+                <h4 class="gallery-caption">
+                    Electronic Hardware Development
+                </h4>
+
+                <p class="gallery-subtext">
+                    PCB prototyping and hardware development process.
+                </p>
+            </div>
+        </div>
+
     </div>
   </section>
 
@@ -410,6 +482,90 @@
       sensorViendo = null; 
   }
 </script>
-  <script src="assets/language.js"></script>
+  
+<!-- LUWA PCB GALLERY LANGUAGE SYNC -->
+<script>
+(function () {
+    'use strict';
+
+    const pcbTranslations = {
+        en: [
+            ['LUWA PCB Development',
+             'Electronic hardware development and PCB prototyping.'],
+            ['PCB Design & Integration',
+             'Development and integration of electronic components.'],
+            ['Electronic Hardware Development',
+             'PCB prototyping and hardware development process.']
+        ],
+
+        es: [
+            ['Desarrollo de PCB de LUWA',
+             'Desarrollo de hardware electrónico y prototipado de circuitos impresos.'],
+            ['Diseño e Integración de PCB',
+             'Desarrollo e integración de componentes electrónicos.'],
+            ['Desarrollo de Hardware Electrónico',
+             'Prototipado de circuitos impresos y proceso de desarrollo de hardware.']
+        ],
+
+        nl: [
+            ['LUWA-printplaatontwikkeling',
+             'Ontwikkeling van elektronische hardware en prototyping van printplaten.'],
+            ['Printplaatontwerp en Integratie',
+             'Ontwikkeling en integratie van elektronische componenten.'],
+            ['Elektronische Hardwareontwikkeling',
+             'Prototyping van printplaten en het hardwareontwikkelingsproces.']
+        ]
+    };
+
+    const filenames = [
+        'LUWA_PCB.jpeg',
+        'LUWA1_PCB.jpeg',
+        'LUWA2_PCB.jpeg'
+    ];
+
+    function updatePCBTranslations(lang) {
+        const translations = pcbTranslations[lang] || pcbTranslations.en;
+
+        filenames.forEach((filename, index) => {
+            const image = Array.from(
+                document.querySelectorAll('.gallery-card img')
+            ).find(img => img.getAttribute('src')?.endsWith('/' + filename));
+
+            if (!image) return;
+
+            const card = image.closest('.gallery-card');
+            if (!card) return;
+
+            const title = card.querySelector('.gallery-caption');
+            const description = card.querySelector('.gallery-subtext');
+            const link = card.querySelector('a[data-lightbox]');
+
+            if (title) title.textContent = translations[index][0];
+            if (description) description.textContent = translations[index][1];
+
+            if (link) {
+                link.setAttribute('data-title', translations[index][0]);
+            }
+        });
+    }
+
+    function syncLanguage() {
+        const lang = window.LUWA_i18n?.getLanguage() || 'en';
+        updatePCBTranslations(lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', syncLanguage);
+
+    window.addEventListener('luwa:languagechange', function (event) {
+        updatePCBTranslations(event.detail.language);
+    });
+
+    if (document.readyState !== 'loading') {
+        syncLanguage();
+    }
+})();
+</script>
+
+<script src="assets/language.js?v=20261107-pcb"></script>
 </body>
 </html>

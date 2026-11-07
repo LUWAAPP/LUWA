@@ -108,6 +108,14 @@
     'Field Assembly': 'Ensamblaje de Campo',
     'Final enclosure ready for field deployment.': 'Gabinete final listo para despliegue en campo.',
 
+    // LUWA PCB Development
+    'LUWA PCB Development': 'Desarrollo de PCB de LUWA',
+    'Electronic hardware development and PCB prototyping.': 'Desarrollo de hardware electrónico y prototipado de circuitos impresos.',
+    'PCB Design & Integration': 'Diseño e Integración de PCB',
+    'Development and integration of electronic components.': 'Desarrollo e integración de componentes electrónicos.',
+    'Electronic Hardware Development': 'Desarrollo de Hardware Electrónico',
+    'PCB prototyping and hardware development process.': 'Prototipado de circuitos impresos y proceso de desarrollo de hardware.',
+
     // Carbon calculator
     'GHG Inventory Platform (ISO 14064)': 'Plataforma de Inventario de GEI (ISO 14064)',
     'Corporate tool for the parametric quantification of greenhouse gas emissions by operational scope.': 'Herramienta corporativa para la cuantificación paramétrica de emisiones de gases de efecto invernadero por alcance operativo.',
@@ -341,6 +349,14 @@
     'PCB, microcontroller, and air quality sensors.': 'Printplaat, microcontroller en luchtkwaliteitssensoren.',
     'Field Assembly': 'Veldmontage',
     'Final enclosure ready for field deployment.': 'Definitieve behuizing gereed voor plaatsing in het veld.',
+
+    // LUWA PCB Development
+    'LUWA PCB Development': 'LUWA-printplaatontwikkeling',
+    'Electronic hardware development and PCB prototyping.': 'Ontwikkeling van elektronische hardware en prototyping van printplaten.',
+    'PCB Design & Integration': 'Printplaatontwerp en Integratie',
+    'Development and integration of electronic components.': 'Ontwikkeling en integratie van elektronische componenten.',
+    'Electronic Hardware Development': 'Elektronische Hardwareontwikkeling',
+    'PCB prototyping and hardware development process.': 'Prototyping van printplaten en het hardwareontwikkelingsproces.',
 
     // Carbon calculator
     'GHG Inventory Platform (ISO 14064)': 'BKG-inventarisatieplatform (ISO 14064)',
