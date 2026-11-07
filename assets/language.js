@@ -55,6 +55,7 @@
     'Your browser does not support the video tag.': 'Tu navegador no admite la etiqueta de video.',
 
     // About
+    'Systems Engineer specializing in frontend and backend development, databases, and web design. Quick to learn new technologies, with the skills to design and build full-stack applications.': 'Ingeniero de Sistemas especializado en desarrollo frontend y backend, bases de datos y diseño web. Con capacidad para aprender nuevas tecnologías y diseñar y desarrollar aplicaciones full stack.',
     'Specialist in satellite data processing and emission inversion methods. Focused on integrating high-resolution atmospheric data with advanced computational models.': 'Especialista en procesamiento de datos satelitales y métodos de inversión de emisiones. Enfocado en integrar datos atmosféricos de alta resolución con modelos computacionales avanzados.',
     'Expert in environmental consultancy and policy assessment. Dedicated to bridging scientific modeling and decision-making frameworks for sustainable management.': 'Experto en consultoría ambiental y evaluación de políticas. Dedicado a vincular la modelación científica con marcos de toma de decisiones para una gestión sostenible.',
     'Developer dedicated to the scientific study of environmental pollution.': 'Desarrollador dedicado al estudio científico de la contaminación ambiental.',
@@ -297,6 +298,7 @@
     'Your browser does not support the video tag.': 'Uw browser ondersteunt de videotag niet.',
 
     // About
+    'Systems Engineer specializing in frontend and backend development, databases, and web design. Quick to learn new technologies, with the skills to design and build full-stack applications.': 'Systeemingenieur gespecialiseerd in frontend- en backendontwikkeling, databases en webdesign. Leert snel nieuwe technologieën en kan fullstackapplicaties ontwerpen en ontwikkelen.',
     'Specialist in satellite data processing and emission inversion methods. Focused on integrating high-resolution atmospheric data with advanced computational models.': 'Specialist in satellietgegevensverwerking en emissie-inversiemethoden. Gericht op de integratie van atmosferische data met hoge resolutie in geavanceerde rekenmodellen.',
     'Expert in environmental consultancy and policy assessment. Dedicated to bridging scientific modeling and decision-making frameworks for sustainable management.': 'Expert in milieuadvies en beleidsevaluatie. Toegewijd aan het overbruggen van wetenschappelijke modellering en besluitvormingskaders voor duurzaam beheer.',
     'Developer dedicated to the scientific study of environmental pollution.': 'Ontwikkelaar toegewijd aan het wetenschappelijk onderzoek naar milieuvervuiling.',

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="assets/Cascading_Style_Sheets/style.css">
 
   <style>
-
     /* =====================================================
        GENERAL FIX FOR THIS PAGE
        Prevent global section rules from altering the layout
@@ -339,8 +338,64 @@
       }
 
     }
-
   </style>
+
+
+<style id="team-portrait-fix">
+  .profiles {
+    align-items: stretch !important;
+  }
+
+  .profiles > .profile {
+    text-align: center !important;
+    min-width: 0;
+  }
+
+  .team-portrait {
+    display: block !important;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    max-width: 100%;
+    margin: 0 auto 15px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border: 3px solid #0ea5e9;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  .profiles .team-portrait img {
+    display: block !important;
+    float: none !important;
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .profiles .portrait-brolin img {
+    object-position: center top !important;
+  }
+
+  .profiles .portrait-alvaro img {
+    object-position: center top !important;
+    transform: translate(18%, -28%) scale(2.4);
+    transform-origin: 50% 12%;
+  }
+
+  .profiles .portrait-erick img {
+    object-position: center top !important;
+    transform: translate(24%, -20%) scale(2.8);
+    transform-origin: 50% 12%;
+  }
+</style>
 
 </head>
 
@@ -356,10 +411,7 @@
 
     <a href="index.html">
 
-      <img
-        src="assets/imagenes/imagenes_generales/LOGO.png"
-        alt="LUWA Logo"
-        class="logo">
+      <img src="assets/imagenes/imagenes_generales/LOGO.png" alt="LUWA Logo" class="logo">
 
     </a>
 
@@ -367,21 +419,14 @@
     <h1>About LUWA Consulting</h1>
 
 
-    <nav>
-
+    <nav class="luwa-main-nav">
       <a href="index.html">Home</a>
-
       <a href="about.html" class="active">About</a>
-
-      <a href="consultancy-services.html">Services</a>
-
+      <a href="consultancy-services.html">Consultancy Services</a>
       <a href="data-methods.html">Data & Methods</a>
-
-      <a href="contact.html">Contact</a>
-
       <a href="sensing.html">Sensing Network</a>
-
-
+      <a href="contact.html">Contact</a>
+      <button class="cloud-btn" onclick="window.location.href='auth.html'">☁️ Connect to Cloud</button>
     </nav>
 
   </header>
@@ -402,9 +447,7 @@
 
       <div class="profile">
 
-        <img
-          src="assets/imagenes/perfiles/Profile_2.jpeg"
-          alt="Andrés Yarce Botero">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_2.jpeg" alt="Andrés Yarce Botero"></div>
 
         <h2>Andrés Yarce Botero</h2>
 
@@ -422,9 +465,7 @@
 
       <div class="profile">
 
-        <img
-          src="assets/imagenes/perfiles/Profile_1.jpeg"
-          alt="Álvaro de Jesus Ochoa Calle">
+        <div class="team-portrait portrait-alvaro"><img src="assets/imagenes/perfiles/Profile_1.jpeg" alt="Álvaro de Jesus Ochoa Calle"></div>
 
         <h2>Álvaro de Jesus Ochoa Calle</h2>
 
@@ -442,9 +483,7 @@
 
       <div class="profile">
 
-        <img
-          src="assets/imagenes/perfiles/Profile_3.jpeg"
-          alt="Juan Jesus Valdez Vasquez">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_3.jpeg" alt="Juan Jesus Valdez Vasquez"></div>
 
         <h2>Juan Jesus Valdez Vasquez</h2>
 
@@ -461,32 +500,28 @@
 
       <div class="profile">
 
-        <img
-          src="assets/imagenes/perfiles/Profile_4.jpeg"
-          alt="Michiel van Weele">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/Profile_4.jpeg" alt="Michiel van Weele"></div>
 
         <h2>Michiel van Weele</h2>
 
         <p>
           Scientific Advisor<br>
           Atmospheric scientist specializing in atmospheric composition,
-          Air quality - climate interactions, and satellite observations.
+          air quality, climate interactions, and satellite observations.
         </p>
 
       </div>
 
 
 
-      <!-- Systems Engineer -->
+      <!-- John Erick Hoyos Giraldo -->
 
       <div class="profile">
 
-        <img
-          src="assets/imagenes/perfiles/profile_5.jpeg"
-          alt="Systems Engineer"
-          style="object-fit: cover; object-position: center 22%;">
+        <div class="team-portrait portrait-erick"><img src="assets/imagenes/perfiles/profile_5.jpeg" alt="John Erick Hoyos Giraldo"
+          style="object-fit: cover; object-position: center 22%;"></div>
 
-        <h2>Systems Engineer</h2>
+        <h2>John Erick Hoyos Giraldo</h2>
 
         <p>
           Systems Engineer focused on Backend and QA. I develop scalable,
@@ -496,10 +531,21 @@
 
       </div>
 
+      <!-- Brolin -->
+      <div class="profile">
+        <div class="team-portrait portrait-brolin"><img src="assets/imagenes/perfiles/Brolin_profile.jpeg" alt="Brolin"></div>
+        <h2>Brolin</h2>
+        <p>Head of Electronics &amp; Hardware Development</p>
+      </div>
 
-    </div>
+      <!-- Juan José -->
+      <div class="profile" id="profile-juan-jose">
+        <div class="team-portrait"><img src="assets/imagenes/perfiles/JuanJO.jpeg" alt="Juan José" loading="lazy"></div>
+        <h2>Juan José</h2>
+        <p id="juan-jose-description">Systems Engineer specializing in frontend and backend development, databases, and web design. Quick to learn new technologies, with the skills to design and build full-stack applications.</p>
+      </div>
 
-
+    </div> <!-- End of profiles -->
 
     <!-- =====================================================
          ABOUT LUWA
@@ -552,10 +598,7 @@
           Learn more about LUWA's capabilities, services and areas of application.
         </p>
 
-        <a
-          href="LUWA_Broshure_business_lines.pdf"
-          class="download-btn"
-          download>
+        <a href="LUWA_Broshure_business_lines.pdf" class="download-btn" download>
           ↓ Download Brochure
         </a>
 
@@ -572,9 +615,7 @@
 
     <div class="back-area">
 
-      <a
-        href="index.html"
-        class="back-btn">
+      <a href="index.html" class="back-btn">
         ← Back to Home
       </a>
 
@@ -596,6 +637,7 @@
   </footer>
 
 
+  <script src="assets/language.js?v=20261107-juan-jose"></script>
 </body>
 
 </html>
