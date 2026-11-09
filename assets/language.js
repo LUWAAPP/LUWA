@@ -4,6 +4,25 @@
   const STORAGE_KEY = 'luwa-language';
 
   const es = {
+    // Network and resources
+    "Network": "Red",
+    "Network & Resources": "Red y Recursos",
+    "Network & Resources - LUWA Consulting": "Red y Recursos - LUWA Consulting",
+    "Scientific contacts and links to atmospheric and climate research institutions and public services.": "Contactos científicos y enlaces a instituciones de investigación atmosférica y climática y servicios públicos.",
+    "Scientific contacts": "Contactos científicos",
+    "KNMI — Royal Netherlands Meteorological Institute": "KNMI — Real Instituto Meteorológico de los Países Bajos",
+    "Scientific contact: Michiel van Weele": "Contacto científico: Michiel van Weele",
+    "Visit KNMI": "Visitar KNMI",
+    "Research and public services": "Investigación y servicios públicos",
+    "Applied research in areas including climate, air quality and Earth observation.": "Investigación aplicada en áreas como clima, calidad del aire y observación de la Tierra.",
+    "Visit TNO": "Visitar TNO",
+    "CAMS — Copernicus Atmosphere Monitoring Service": "CAMS — Servicio de Vigilancia Atmosférica de Copernicus",
+    "Atmospheric composition information, air quality forecasts and data access.": "Información sobre composición atmosférica, pronósticos de calidad del aire y acceso a datos.",
+    "Explore CAMS": "Explorar CAMS",
+    "C3S — Copernicus Climate Change Service": "C3S — Servicio de Cambio Climático de Copernicus",
+    "Climate information, datasets and tools for understanding climate variability and change.": "Información climática, conjuntos de datos y herramientas para comprender la variabilidad y el cambio climático.",
+    "Explore C3S": "Explorar C3S",
+    "Institutional names identify affiliations and external resources. Inclusion does not imply an institutional partnership or endorsement of LUWA.": "Los nombres institucionales identifican afiliaciones y recursos externos. Su inclusión no implica una alianza institucional ni un respaldo a LUWA.",
     'Head of Electronics & Hardware Development': 'Director de Electrónica y Desarrollo de Hardware',
     // Global navigation and site chrome
     'Home': 'Inicio',
@@ -247,6 +266,25 @@
   };
 
   const nl = {
+    // Network and resources
+    "Network": "Netwerk",
+    "Network & Resources": "Netwerk & Bronnen",
+    "Network & Resources - LUWA Consulting": "Netwerk & Bronnen - LUWA Consulting",
+    "Scientific contacts and links to atmospheric and climate research institutions and public services.": "Wetenschappelijke contacten en links naar onderzoeksinstellingen en publieke diensten voor atmosfeer en klimaat.",
+    "Scientific contacts": "Wetenschappelijke contacten",
+    "KNMI — Royal Netherlands Meteorological Institute": "KNMI — Koninklijk Nederlands Meteorologisch Instituut",
+    "Scientific contact: Michiel van Weele": "Wetenschappelijk contact: Michiel van Weele",
+    "Visit KNMI": "Bezoek KNMI",
+    "Research and public services": "Onderzoek en publieke diensten",
+    "Applied research in areas including climate, air quality and Earth observation.": "Toegepast onderzoek op het gebied van onder meer klimaat, luchtkwaliteit en aardobservatie.",
+    "Visit TNO": "Bezoek TNO",
+    "CAMS — Copernicus Atmosphere Monitoring Service": "CAMS — Copernicus Atmosphere Monitoring Service",
+    "Atmospheric composition information, air quality forecasts and data access.": "Informatie over atmosferische samenstelling, luchtkwaliteitsverwachtingen en toegang tot gegevens.",
+    "Explore CAMS": "Ontdek CAMS",
+    "C3S — Copernicus Climate Change Service": "C3S — Copernicus Climate Change Service",
+    "Climate information, datasets and tools for understanding climate variability and change.": "Klimaatinformatie, datasets en hulpmiddelen om klimaatvariabiliteit en klimaatverandering te begrijpen.",
+    "Explore C3S": "Ontdek C3S",
+    "Institutional names identify affiliations and external resources. Inclusion does not imply an institutional partnership or endorsement of LUWA.": "Instellingsnamen geven affiliaties en externe bronnen aan. Vermelding impliceert geen institutioneel partnerschap of steun aan LUWA.",
     'Head of Electronics & Hardware Development': 'Hoofd Elektronica en Hardwareontwikkeling',
     // Global navigation and site chrome
     'Home': 'Home',
@@ -612,7 +650,7 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: wrap !important;
         gap: 0 !important;
       }
       nav.luwa-main-nav > a {
@@ -746,7 +784,21 @@
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
   }
 
+  function addNetworkLink() {
+    const nav = document.querySelector('nav.luwa-main-nav');
+    if (!nav || nav.querySelector('a[href="network.html"]')) return;
+    const link = document.createElement('a');
+    link.href = 'network.html';
+    link.textContent = 'Network';
+    if (window.location.pathname.endsWith('/network.html')) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    }
+    nav.insertBefore(link, nav.querySelector('.cloud-btn'));
+  }
+
   function init() {
+    addNetworkLink();
     addStyles();
     addSwitcher();
     const lang = getSavedLanguage();
@@ -772,3 +824,4 @@
     init();
   }
 })();
+

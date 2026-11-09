@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network &amp; Resources - LUWA Consulting</title>
+<link rel="stylesheet" href="assets/Cascading_Style_Sheets/style.css">
+<style>
+main.network-page { display:block; max-width:1050px; margin:40px auto 60px; padding:0 24px; color:#334155; }
+.network-page section { display:block; padding:0; margin:32px 0; max-width:none; }
+.network-page h2 { color:#0056b3; font-size:24px; }
+.network-page h3 { color:#0056b3; font-size:19px; margin-top:0; }
+.network-page p { line-height:1.7; margin:0 0 16px; }
+.network-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+.network-card { background:white; border:1px solid #e2e8f0; border-top:4px solid #0056b3; border-radius:8px; padding:26px; }
+.network-card a { color:#0056b3; font-weight:600; }
+.network-card .network-logo { display:block; width:100%; max-width:320px; height:auto; margin:0 0 22px; object-fit:contain; }
+.knmi-contact-images { display:flex; align-items:center; gap:28px; margin-bottom:22px; }
+.knmi-contact-images .network-logo { width:320px; max-width:calc(100% - 138px); height:auto; margin:0; }
+.knmi-contact-images .contact-portrait { display:block; flex:0 0 110px; width:110px; height:110px; object-fit:cover; object-position:center; border-radius:50%; border:2px solid #e2e8f0; }
+@media(max-width:480px) {
+  .knmi-contact-images { gap:16px; }
+  .knmi-contact-images .network-logo { max-width:calc(100% - 96px); }
+  .knmi-contact-images .contact-portrait { flex-basis:80px; width:80px; height:80px; }
+}
+.network-note { border-top:1px solid #e2e8f0; padding-top:22px; font-size:14px; }
+@media(max-width:850px) { .network-grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+
+    <a href="index.html">
+
+      <img src="assets/imagenes/imagenes_generales/LOGO.png" alt="LUWA Logo" class="logo">
+
+    </a>
+
+
+    <h1>Network &amp; Resources</h1>
+
+
+    <nav class="luwa-main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="consultancy-services.html">Consultancy Services</a>
+      <a href="data-methods.html">Data & Methods</a>
+      <a href="sensing.html">Sensing Network</a>
+      <a href="contact.html">Contact</a>
+      <a href="network.html" class="active" aria-current="page">Network</a>
+      <button class="cloud-btn" onclick="window.location.href='auth.html'">☁️ Connect to Cloud</button>
+    </nav>
+
+  </header>
+<main class="network-page">
+<p>Scientific contacts and links to atmospheric and climate research institutions and public services.</p>
+<section aria-labelledby="contacts-heading">
+<h2 id="contacts-heading">Scientific contacts</h2>
+<article class="network-card">
+<div class="knmi-contact-images">
+<img class="network-logo" src="assets/imagenes/network/knmi-logo.png" alt="KNMI">
+<img class="contact-portrait" src="assets/imagenes/perfiles/Profile_4.jpeg" alt="Michiel van Weele" width="110" height="110">
+</div>
+<h3>KNMI — Royal Netherlands Meteorological Institute</h3>
+<p><strong>Scientific contact: Michiel van Weele</strong></p>
+<p>Atmospheric scientist specializing in atmospheric composition, air quality, climate interactions, and satellite observations.</p>
+<a href="https://www.knmi.nl/over-het-knmi/about" target="_blank" rel="noopener noreferrer">Visit KNMI</a>
+</article>
+</section>
+<section aria-labelledby="resources-heading">
+<h2 id="resources-heading">Research and public services</h2>
+<div class="network-grid">
+<article class="network-card"><h3>TNO</h3><p>Applied research in areas including climate, air quality and Earth observation.</p><a href="https://www.tno.nl/en/" target="_blank" rel="noopener noreferrer">Visit TNO</a></article>
+<article class="network-card"><img class="network-logo" src="assets/imagenes/network/cams-logo.png" alt="CAMS">
+<h3>CAMS — Copernicus Atmosphere Monitoring Service</h3><p>Atmospheric composition information, air quality forecasts and data access.</p><a href="https://atmosphere.copernicus.eu/" target="_blank" rel="noopener noreferrer">Explore CAMS</a></article>
+<article class="network-card"><h3>C3S — Copernicus Climate Change Service</h3><p>Climate information, datasets and tools for understanding climate variability and change.</p><a href="https://climate.copernicus.eu/" target="_blank" rel="noopener noreferrer">Explore C3S</a></article>
+</div>
+</section>
+<p class="network-note">Institutional names identify affiliations and external resources. Inclusion does not imply an institutional partnership or endorsement of LUWA.</p>
+<a href="index.html">← Back to Home</a>
+</main>
+<footer>&copy; 2026 LUWA - Satellite Data &amp; Environmental Monitoring</footer>
+<script src="assets/language.js?v=20261109-network"></script>
+</body>
+</html>
