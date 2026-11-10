@@ -114,6 +114,8 @@
     '✅ Message sent successfully!': '✅ ¡Mensaje enviado correctamente!',
 
     // Sensing
+    'Early Adopters': 'Primeros usuarios',
+    'Epitech Spain has purchased LUWA sensing modules for hands-on teaching and sensor development.': 'Epitech Spain ha adquirido módulos de sensado LUWA para la enseñanza práctica y el desarrollo de sensores.',
     'Real-Time Sensor Network': 'Red de Sensores en Tiempo Real',
     'Interactive geospatial telemetry and live environmental monitoring, powered by LUWA.': 'Telemetría geoespacial interactiva y monitoreo ambiental en tiempo real, impulsados por LUWA.',
     'Loading telemetry...': 'Cargando telemetría...',
@@ -376,6 +378,8 @@
     '✅ Message sent successfully!': '✅ Bericht succesvol verzonden!',
 
     // Sensing
+    'Early Adopters': 'Vroege gebruikers',
+    'Epitech Spain has purchased LUWA sensing modules for hands-on teaching and sensor development.': 'Epitech Spain heeft LUWA-sensormodules aangeschaft voor praktijkgericht onderwijs en sensorontwikkeling.',
     'Real-Time Sensor Network': 'Realtime Sensornetwerk',
     'Interactive geospatial telemetry and live environmental monitoring, powered by LUWA.': 'Interactieve geospatiale telemetrie en live milieumonitoring, aangedreven door LUWA.',
     'Loading telemetry...': 'Telemetrie laden...',

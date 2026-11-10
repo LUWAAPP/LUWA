@@ -48,6 +48,76 @@
     .gallery-caption { font-size: 15px; font-weight: bold; color: #1e293b; margin: 0 0 5px 0; }
     .gallery-subtext { font-size: 12px; color: #64748b; margin: 0; }
 
+    /* EARLY ADOPTERS — LUWA SENSING NETWORK */
+    .early-adopters-section {
+      max-width: 1200px;
+      margin: 42px auto 0;
+      padding: 20px;
+    }
+
+    .early-adopter-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+      padding: 32px;
+      background: var(--gris-niebla, #f0f4f8);
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+
+    .early-adopter-logo-link {
+      display: inline-flex;
+      box-sizing: border-box;
+      width: 260px;
+      flex: 0 0 260px;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .early-adopter-logo-link:hover,
+    .early-adopter-logo-link:focus-visible {
+      box-shadow: 0 5px 18px rgba(0, 86, 179, 0.12);
+    }
+
+    .early-adopter-logo {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .early-adopter-info { max-width: 520px; }
+    .early-adopter-info h3 {
+      margin: 0 0 12px;
+      color: var(--azul-luwa, #0056b3);
+      font-size: 20px;
+    }
+    .early-adopter-info p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 650px) {
+      .early-adopters-section { padding: 10px 0; }
+      .early-adopter-card {
+        flex-direction: column;
+        padding: 24px 18px;
+        gap: 22px;
+        text-align: center;
+      }
+      .early-adopter-logo-link {
+        width: min(100%, 260px);
+        flex: initial;
+      }
+    }
+
     /* LEAFLET POPUP BUTTON */
     .btn-analytics { background-color: var(--azul-luwa); color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 10px; font-weight: bold; transition: 0.3s; }
     .btn-analytics:hover { background-color: var(--cian-acento); }
@@ -239,6 +309,30 @@
             </div>
         </div>
 
+    </div>
+  </section>
+
+  <!-- EARLY ADOPTERS: EPITECH SPAIN -->
+  <section class="early-adopters-section" id="early-adopters" aria-labelledby="early-adopters-heading">
+    <h2 class="section-title" id="early-adopters-heading">Early Adopters</h2>
+
+    <div class="early-adopter-card">
+      <a class="early-adopter-logo-link"
+         href="https://www.epitech-it.es/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Visit Epitech Spain website">
+        <img class="early-adopter-logo"
+             src="https://newsroom.epitech.eu/wp-content/uploads/2025/12/epitech_logo_bleu-1-300x75.png"
+             alt="Epitech logo"
+             loading="lazy"
+             decoding="async">
+      </a>
+
+      <div class="early-adopter-info">
+        <h3>Epitech Spain</h3>
+        <p>Epitech Spain has purchased LUWA sensing modules for hands-on teaching and sensor development.</p>
+      </div>
     </div>
   </section>
 
@@ -566,6 +660,6 @@
 })();
 </script>
 
-<script src="assets/language.js?v=20261107-pcb"></script>
+<script src="assets/language.js?v=20261110-epitech"></script>
 </body>
 </html>
