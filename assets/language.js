@@ -4,6 +4,26 @@
   const STORAGE_KEY = 'luwa-language';
 
   const es = {
+    // Network and resources
+    "Network": "Red",
+    "Network & Resources": "Red y Recursos",
+    "Network & Resources - LUWA Consulting": "Red y Recursos - LUWA Consulting",
+    "Scientific contacts and links to atmospheric and climate research institutions and public services.": "Contactos científicos y enlaces a instituciones de investigación atmosférica y climática y servicios públicos.",
+    "Scientific contacts": "Contactos científicos",
+    "KNMI — Royal Netherlands Meteorological Institute": "KNMI — Real Instituto Meteorológico de los Países Bajos",
+    "Scientific contact: Michiel van Weele": "Contacto científico: Michiel van Weele",
+    "Visit KNMI": "Visitar KNMI",
+    "Research and public services": "Investigación y servicios públicos",
+    "Applied research in areas including climate, air quality and Earth observation.": "Investigación aplicada en áreas como clima, calidad del aire y observación de la Tierra.",
+    "Visit TNO": "Visitar TNO",
+    "CAMS — Copernicus Atmosphere Monitoring Service": "CAMS — Servicio de Vigilancia Atmosférica de Copernicus",
+    "Atmospheric composition information, air quality forecasts and data access.": "Información sobre composición atmosférica, pronósticos de calidad del aire y acceso a datos.",
+    "Explore CAMS": "Explorar CAMS",
+    "C3S — Copernicus Climate Change Service": "C3S — Servicio de Cambio Climático de Copernicus",
+    "Climate information, datasets and tools for understanding climate variability and change.": "Información climática, conjuntos de datos y herramientas para comprender la variabilidad y el cambio climático.",
+    "Explore C3S": "Explorar C3S",
+    "Institutional names identify affiliations and external resources. Inclusion does not imply an institutional partnership or endorsement of LUWA.": "Los nombres institucionales identifican afiliaciones y recursos externos. Su inclusión no implica una alianza institucional ni un respaldo a LUWA.",
+    'Head of Electronics & Hardware Development': 'Director de Electrónica y Desarrollo de Hardware',
     // Global navigation and site chrome
     'Home': 'Inicio',
     'About': 'Nosotros',
@@ -54,6 +74,7 @@
     'Your browser does not support the video tag.': 'Tu navegador no admite la etiqueta de video.',
 
     // About
+    'Systems Engineer specializing in frontend and backend development, databases, and web design. Quick to learn new technologies, with the skills to design and build full-stack applications.': 'Ingeniero de Sistemas especializado en desarrollo frontend y backend, bases de datos y diseño web. Con capacidad para aprender nuevas tecnologías y diseñar y desarrollar aplicaciones full stack.',
     'Specialist in satellite data processing and emission inversion methods. Focused on integrating high-resolution atmospheric data with advanced computational models.': 'Especialista en procesamiento de datos satelitales y métodos de inversión de emisiones. Enfocado en integrar datos atmosféricos de alta resolución con modelos computacionales avanzados.',
     'Expert in environmental consultancy and policy assessment. Dedicated to bridging scientific modeling and decision-making frameworks for sustainable management.': 'Experto en consultoría ambiental y evaluación de políticas. Dedicado a vincular la modelación científica con marcos de toma de decisiones para una gestión sostenible.',
     'Developer dedicated to the scientific study of environmental pollution.': 'Desarrollador dedicado al estudio científico de la contaminación ambiental.',
@@ -93,6 +114,8 @@
     '✅ Message sent successfully!': '✅ ¡Mensaje enviado correctamente!',
 
     // Sensing
+    'Early Adopters': 'Primeros usuarios',
+    'Epitech Spain has purchased LUWA sensing modules for hands-on teaching and sensor development.': 'Epitech Spain ha adquirido módulos de sensado LUWA para la enseñanza práctica y el desarrollo de sensores.',
     'Real-Time Sensor Network': 'Red de Sensores en Tiempo Real',
     'Interactive geospatial telemetry and live environmental monitoring, powered by LUWA.': 'Telemetría geoespacial interactiva y monitoreo ambiental en tiempo real, impulsados por LUWA.',
     'Loading telemetry...': 'Cargando telemetría...',
@@ -106,6 +129,14 @@
     'PCB, microcontroller, and air quality sensors.': 'PCB, microcontrolador y sensores de calidad del aire.',
     'Field Assembly': 'Ensamblaje de Campo',
     'Final enclosure ready for field deployment.': 'Gabinete final listo para despliegue en campo.',
+
+    // LUWA PCB Development
+    'LUWA PCB Development': 'Desarrollo de PCB de LUWA',
+    'Electronic hardware development and PCB prototyping.': 'Desarrollo de hardware electrónico y prototipado de circuitos impresos.',
+    'PCB Design & Integration': 'Diseño e Integración de PCB',
+    'Development and integration of electronic components.': 'Desarrollo e integración de componentes electrónicos.',
+    'Electronic Hardware Development': 'Desarrollo de Hardware Electrónico',
+    'PCB prototyping and hardware development process.': 'Prototipado de circuitos impresos y proceso de desarrollo de hardware.',
 
     // Carbon calculator
     'GHG Inventory Platform (ISO 14064)': 'Plataforma de Inventario de GEI (ISO 14064)',
@@ -237,7 +268,26 @@
   };
 
   const nl = {
-
+    // Network and resources
+    "Network": "Netwerk",
+    "Network & Resources": "Netwerk & Bronnen",
+    "Network & Resources - LUWA Consulting": "Netwerk & Bronnen - LUWA Consulting",
+    "Scientific contacts and links to atmospheric and climate research institutions and public services.": "Wetenschappelijke contacten en links naar onderzoeksinstellingen en publieke diensten voor atmosfeer en klimaat.",
+    "Scientific contacts": "Wetenschappelijke contacten",
+    "KNMI — Royal Netherlands Meteorological Institute": "KNMI — Koninklijk Nederlands Meteorologisch Instituut",
+    "Scientific contact: Michiel van Weele": "Wetenschappelijk contact: Michiel van Weele",
+    "Visit KNMI": "Bezoek KNMI",
+    "Research and public services": "Onderzoek en publieke diensten",
+    "Applied research in areas including climate, air quality and Earth observation.": "Toegepast onderzoek op het gebied van onder meer klimaat, luchtkwaliteit en aardobservatie.",
+    "Visit TNO": "Bezoek TNO",
+    "CAMS — Copernicus Atmosphere Monitoring Service": "CAMS — Copernicus Atmosphere Monitoring Service",
+    "Atmospheric composition information, air quality forecasts and data access.": "Informatie over atmosferische samenstelling, luchtkwaliteitsverwachtingen en toegang tot gegevens.",
+    "Explore CAMS": "Ontdek CAMS",
+    "C3S — Copernicus Climate Change Service": "C3S — Copernicus Climate Change Service",
+    "Climate information, datasets and tools for understanding climate variability and change.": "Klimaatinformatie, datasets en hulpmiddelen om klimaatvariabiliteit en klimaatverandering te begrijpen.",
+    "Explore C3S": "Ontdek C3S",
+    "Institutional names identify affiliations and external resources. Inclusion does not imply an institutional partnership or endorsement of LUWA.": "Instellingsnamen geven affiliaties en externe bronnen aan. Vermelding impliceert geen institutioneel partnerschap of steun aan LUWA.",
+    'Head of Electronics & Hardware Development': 'Hoofd Elektronica en Hardwareontwikkeling',
     // Global navigation and site chrome
     'Home': 'Home',
     'About': 'Over ons',
@@ -288,6 +338,7 @@
     'Your browser does not support the video tag.': 'Uw browser ondersteunt de videotag niet.',
 
     // About
+    'Systems Engineer specializing in frontend and backend development, databases, and web design. Quick to learn new technologies, with the skills to design and build full-stack applications.': 'Systeemingenieur gespecialiseerd in frontend- en backendontwikkeling, databases en webdesign. Leert snel nieuwe technologieën en kan fullstackapplicaties ontwerpen en ontwikkelen.',
     'Specialist in satellite data processing and emission inversion methods. Focused on integrating high-resolution atmospheric data with advanced computational models.': 'Specialist in satellietgegevensverwerking en emissie-inversiemethoden. Gericht op de integratie van atmosferische data met hoge resolutie in geavanceerde rekenmodellen.',
     'Expert in environmental consultancy and policy assessment. Dedicated to bridging scientific modeling and decision-making frameworks for sustainable management.': 'Expert in milieuadvies en beleidsevaluatie. Toegewijd aan het overbruggen van wetenschappelijke modellering en besluitvormingskaders voor duurzaam beheer.',
     'Developer dedicated to the scientific study of environmental pollution.': 'Ontwikkelaar toegewijd aan het wetenschappelijk onderzoek naar milieuvervuiling.',
@@ -327,6 +378,8 @@
     '✅ Message sent successfully!': '✅ Bericht succesvol verzonden!',
 
     // Sensing
+    'Early Adopters': 'Vroege gebruikers',
+    'Epitech Spain has purchased LUWA sensing modules for hands-on teaching and sensor development.': 'Epitech Spain heeft LUWA-sensormodules aangeschaft voor praktijkgericht onderwijs en sensorontwikkeling.',
     'Real-Time Sensor Network': 'Realtime Sensornetwerk',
     'Interactive geospatial telemetry and live environmental monitoring, powered by LUWA.': 'Interactieve geospatiale telemetrie en live milieumonitoring, aangedreven door LUWA.',
     'Loading telemetry...': 'Telemetrie laden...',
@@ -340,6 +393,14 @@
     'PCB, microcontroller, and air quality sensors.': 'Printplaat, microcontroller en luchtkwaliteitssensoren.',
     'Field Assembly': 'Veldmontage',
     'Final enclosure ready for field deployment.': 'Definitieve behuizing gereed voor plaatsing in het veld.',
+
+    // LUWA PCB Development
+    'LUWA PCB Development': 'LUWA-printplaatontwikkeling',
+    'Electronic hardware development and PCB prototyping.': 'Ontwikkeling van elektronische hardware en prototyping van printplaten.',
+    'PCB Design & Integration': 'Printplaatontwerp en Integratie',
+    'Development and integration of electronic components.': 'Ontwikkeling en integratie van elektronische componenten.',
+    'Electronic Hardware Development': 'Elektronische Hardwareontwikkeling',
+    'PCB prototyping and hardware development process.': 'Prototyping van printplaten en het hardwareontwikkelingsproces.',
 
     // Carbon calculator
     'GHG Inventory Platform (ISO 14064)': 'BKG-inventarisatieplatform (ISO 14064)',
@@ -593,7 +654,7 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: wrap !important;
         gap: 0 !important;
       }
       nav.luwa-main-nav > a {
@@ -615,7 +676,7 @@
       nav.luwa-main-nav > a:nth-of-type(3) { width: 166px; }
       nav.luwa-main-nav > a:nth-of-type(4) { width: 130px; }
       nav.luwa-main-nav > a:nth-of-type(5) { width: 140px; }
-      nav.luwa-main-nav > a:nth-of-type(6) { width: 156px; }
+      nav.luwa-main-nav > a:nth-of-type(6) { width: 86px; }
       nav.luwa-main-nav > a:nth-of-type(7) { width: 86px; }
       nav.luwa-main-nav > a:nth-of-type(8) { width: 88px; }
       nav.luwa-main-nav > .cloud-btn {
@@ -727,7 +788,21 @@
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
   }
 
+  function addNetworkLink() {
+    const nav = document.querySelector('nav.luwa-main-nav');
+    if (!nav || nav.querySelector('a[href="network.html"]')) return;
+    const link = document.createElement('a');
+    link.href = 'network.html';
+    link.textContent = 'Network';
+    if (window.location.pathname.endsWith('/network.html')) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    }
+    nav.insertBefore(link, nav.querySelector('.cloud-btn'));
+  }
+
   function init() {
+    addNetworkLink();
     addStyles();
     addSwitcher();
     const lang = getSavedLanguage();
@@ -753,3 +828,4 @@
     init();
   }
 })();
+
